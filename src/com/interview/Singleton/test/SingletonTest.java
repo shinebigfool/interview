@@ -4,6 +4,7 @@ import com.interview.Singleton.Singleton1;
 import com.interview.Singleton.Singleton3;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
@@ -15,7 +16,7 @@ public class SingletonTest {
         System.out.println(s1==s2);
     }
     @Test
-    public void test2(){
+    public void test2() throws IOException {
         for (int i=0;i<3;i++){
             new Thread(new Runnable() {
                 @Override
@@ -24,6 +25,7 @@ public class SingletonTest {
                 }
             }).start();
         }
+        int read = System.in.read();
     }
     @Test
     public void test3() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
