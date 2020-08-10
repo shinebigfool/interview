@@ -46,4 +46,30 @@ public class ThreadTest {
         System.out.println(future.get());
         pool.shutdown();
     }
+    public void add(Byte b)
+    {
+        b = b++;
+    }
+    @Test
+    public void test5(){
+        Byte a = 127;
+        Byte b = 127;
+        add(++a);
+        System.out.print(a + " ");
+        add(b);
+        System.out.print(b + "");
+        String s = "祝你考出好成绩！";
+        System.out.println(s.length());
+
+    }
+    @Test
+    public void test6(){
+        float t = (float) 5.1;
+        float t1 = 5.1f;
+        int i = (byte) t;
+        int i1 = (int) t1;
+        System.out.println(t+"   "+i+"    "+i1);
+    }
+
+
 }
