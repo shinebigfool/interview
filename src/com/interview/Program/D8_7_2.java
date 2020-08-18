@@ -30,7 +30,7 @@ public class D8_7_2 {
         if(map.containsKey(s)){
             return map.get(s);
         }
-        ArrayList<String> res = new ArrayList<String>();
+        ArrayList<String> res = new ArrayList<>();
         if(s.length()==0){
             res.add("");
             return res;
@@ -38,7 +38,7 @@ public class D8_7_2 {
         for(String str:dict){
             if(s.startsWith(str)){
                 for(String subStr : DFS(s.substring(str.length()),dict,map)){
-                    res.add(str+(subStr ==""?"":" ")+subStr);
+                    res.add(str+(subStr.equals("") ?"":" ")+subStr);
                 }
             }
         }
