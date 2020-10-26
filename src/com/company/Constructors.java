@@ -5,12 +5,12 @@ import java.lang.reflect.Constructor;
 public class Constructors {
     public static void main(String[] args) throws Exception{
         Class clazz = Class.forName("com.company.Student");
-        System.out.println("所有公共构造方法");
+        System.out.println("所有公共构造方法如下");
         Constructor[] conArry = clazz.getConstructors();
         for(Constructor c:conArry){
             System.out.println(c);
         }
-        System.out.println("所有的构造方法");
+        System.out.println("所有的构造方法如下");
         conArry = clazz.getDeclaredConstructors();
         for(Constructor c:conArry){
             System.out.println(c);

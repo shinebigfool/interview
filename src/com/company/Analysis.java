@@ -8,14 +8,14 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.List;//adaad
 
 public class Analysis {
     public static void main(String[] args) {
         new Analysis().selectAll();
     }
     public List<Score> selectAll(){
-        System.out.println("selecyAll()");
+        System.out.println("selecyAll()这是一行注释");
         List<Score> lists = new ArrayList<>();
         DocumentBuilderFactory bbf = DocumentBuilderFactory.newInstance();
         try {
