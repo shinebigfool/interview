@@ -57,7 +57,7 @@ public class StringOperate {
         }
         for (String arr : arrs) {
             try {
-                Integer num = Integer.parseInt(arr);
+                int num = Integer.parseInt(arr);
                 if(num>255||num<0){
                     return false;
                 }
